@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Jogadoras</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Jogadoras de Futebol Feminino</h1>
+  </header>
+
+  <main>
+    <section class="title-jogadoras">
+      <h2>Jogadoras</h2>
+    </section>
+    <section id="lista-jogadoras" class="grid-cards"></section>
+    <section id="cadastro" class="form-cadastro">
+      <h2>Cadastrar Nova Jogadora</h2>
+      <form id="form-jogadora">
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="text" id="posicao" placeholder="Posição" required>
+        <input type="text" id="clube" placeholder="Clube" required>
+        <input type="number" id="gols" placeholder="Gols" required>
+        <input type="number" id="assistencias" placeholder="Assistências" required>
+        <input type="number" id="jogos" placeholder="Jogos" required>
+        <input type="url" id="foto" placeholder="URL da Foto" required>
+        <button type="submit">Adicionar Jogadora</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
