@@ -51,3 +51,27 @@ form input, form button {
 .title-jogadoras{
   padding: 2rem 2rem 0;
 }
+
+.card button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e63946;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.card button:hover {
+  background-color: #d62828;
+  transform: scale(1.05);
+}
+
+.card button:active {
+  background-color: #a4161a;
+  transform: scale(0.95);
+}
