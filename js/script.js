@@ -48,6 +48,7 @@ function renderizarJogadoras() {
       <p><strong>Posição:</strong> ${j.posicao}</p>
       <p><strong>Clube:</strong> ${j.clube}</p>
       <p><strong>Gols:</strong> ${j.gols} | <strong>Assistências:</strong> ${j.assistencias} | <strong>Jogos:</strong> ${j.jogos}</p>
+      <button onclick="removerJogadora(${jogadoras.indexOf(j)})">Remover</button>
     `;
     container.appendChild(card);
   });
@@ -77,3 +78,14 @@ document.getElementById("form-jogadora").addEventListener("submit", function(e) 
 });
 
 renderizarJogadoras();
+
+function removerJogadora(index) {
+  const confirmar = confirm("Tem certeza que deseja remover esta jogadora?");
+  if (confirmar) {
+    const jogadoras = getJogadoras();
+    jogadoras.splice(index, 1);
+    salvarJogadoras(jogadoras);
+    renderizarJogadoras();
+    alert("Jogadora removida com sucesso!");
+  }
+}
