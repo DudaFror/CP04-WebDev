@@ -16,6 +16,24 @@
       <h2>Jogadoras</h2>
     </section>
     <section id="lista-jogadoras" class="grid-cards"></section>
+    
+    <section id="edicao" class="form-edicao" style="display: none;">
+      <h2>Editar Jogadora</h2>
+      <form id="form-edicao">
+        <input type="text" id="edit-nome" placeholder="Nome" required>
+        <input type="text" id="edit-posicao" placeholder="Posição" required>
+        <input type="text" id="edit-clube" placeholder="Clube" required>
+        <input type="number" id="edit-gols" placeholder="Gols" required>
+        <input type="number" id="edit-assistencias" placeholder="Assistências" required>
+        <input type="number" id="edit-jogos" placeholder="Jogos" required>
+        <input type="url" id="edit-foto" placeholder="URL da Foto" required>
+        <div class="botoes-edicao">
+          <button type="submit">Salvar Alterações</button>
+          <button type="button" onclick="cancelarEdicao()">Cancelar</button>
+        </div>
+      </form>
+    </section>
+    
     <section id="cadastro" class="form-cadastro">
       <h2>Cadastrar Nova Jogadora</h2>
       <form id="form-jogadora">
