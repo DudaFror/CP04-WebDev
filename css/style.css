@@ -75,3 +75,87 @@ form input, form button {
   background-color: #a4161a;
   transform: scale(0.95);
 }
+
+.botoes {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.botoes button {
+  flex: 1;
+  margin-top: 0;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.btn-favorita {
+  background-color: #ffc107 !important;
+  color: #000 !important;
+  font-size: 16px !important;
+  padding: 8px !important;
+}
+
+.btn-favorita:hover {
+  background-color: #ffb300 !important;
+}
+
+.btn-favorita.favorita {
+  background-color: #ff6b35 !important;
+  color: #fff !important;
+}
+
+.btn-favorita.favorita:hover {
+  background-color: #e55a2b !important;
+}
+
+button[onclick*="editarJogadora"] {
+  background-color: #007bff !important;
+}
+
+button[onclick*="editarJogadora"]:hover {
+  background-color: #0056b3 !important;
+}
+
+
+.form-edicao {
+  padding: 2rem;
+  background-color: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 8px;
+  margin: 0 2rem;
+}
+
+.botoes-edicao {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.botoes-edicao button {
+  flex: 1;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.botoes-edicao button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+.botoes-edicao button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.botoes-edicao button[type="button"] {
+  background-color: #6c757d;
+  color: white;
+}
+
+.botoes-edicao button[type="button"]:hover {
+  background-color: #545b62;
+}
