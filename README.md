@@ -37,9 +37,7 @@ O sistema utiliza o **LocalStorage** do navegador para armazenar e manipular os 
 
 ## 🖼 Exemplo de Card
 
-Cada jogadora é exibida em um card com layout semelhante a este:
-
-![Exemplo de Card](attachment:3208524d-dc19-467b-b617-48fb27347b04:image.jpeg)
+Cada jogadora é exibida em um card com layout definido.
 
 ---
 
